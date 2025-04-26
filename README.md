@@ -1,4 +1,4 @@
-# Security Information and Event Management (SIEM)
+# 📄 Security Information and Event Management (SIEM)
 
 ## Abstract
 This project focuses on the development and evaluation of machine learning models aimed at classifying the legitimacy of software applications based on their static attributes. The primary objective is to enhance cybersecurity defenses by leveraging static analysis combined with machine learning techniques to detect potential malware while maintaining a low false positive rate and high detection accuracy. The classification models implemented include Random Forest, K-Nearest Neighbors (KNN), and XGBoost, which have been compared to determine the most effective approach.
@@ -105,5 +105,4 @@ This project demonstrates the effective use of static analysis combined with mac
 
 ## Credits
 - **JPS Saahil (21052423)**
-- **Aditya Pandey (21052471)**
 - **Jatin Pathak (21052422)**
