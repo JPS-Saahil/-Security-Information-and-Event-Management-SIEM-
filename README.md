@@ -56,6 +56,9 @@ The dataset is collected from various malware repositories, including VirusTotal
   <p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA.png" width="700" />
   </p>
+  <p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA%20_COMPONENTS.png" width="700" />
+  </p>
 
 ### 5. Model Evaluation
 - **Performance Metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC.
@@ -81,6 +84,10 @@ The dataset is collected from various malware repositories, including VirusTotal
   - **F1-Score**: 92.10%
 - **PCA**: Significantly improved model efficiency and clarity of data patterns.
 - **Cross-Validation**: Demonstrated model robustness and generalization capability.
+- **AUC-ROC**: Curve for model comparision.
+  <p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/AUC_ROC.png" width="700" />
+  </p>
 
 ## System Design Overview
 
