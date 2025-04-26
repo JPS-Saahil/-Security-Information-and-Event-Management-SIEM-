@@ -90,6 +90,9 @@ The dataset is collected from various malware repositories, including VirusTotal
   </p>
 
 ## System Design Overview
+<p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20071243.png" width="700" />
+  </p>
 
 ### Input
 - Static attributes of software applications, such as name, size, and MD5 hash.
