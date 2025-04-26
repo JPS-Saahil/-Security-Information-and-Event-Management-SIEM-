@@ -31,7 +31,7 @@ The dataset is collected from various malware repositories, including VirusTotal
 - **MD5**: Hash for integrity verification.
 - **SizeOfCode**: Size of the executable code.
 - **Legitimate**: Binary classification label indicating whether the software is legitimate or malicious.
-  <p float="left">
+  <p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20065833.png" width="700" />
 </p>
 
@@ -53,14 +53,14 @@ The dataset is collected from various malware repositories, including VirusTotal
 
 ### 4. Dimensionality Reduction
 - **Principal Component Analysis (PCA)**: Reduces the feature space while retaining maximum variance for model efficiency.
-  <p float="left">
+  <p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA.png" width="700" />
   </p>
 
 ### 5. Model Evaluation
 - **Performance Metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC.
 - **Cross-Validation**: 15-Fold Cross-Validation to ensure model robustness.
-<p float="left">
+<p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/performance.png" width="700" />
 </p>
 
