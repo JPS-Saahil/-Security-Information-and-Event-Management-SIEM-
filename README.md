@@ -123,5 +123,5 @@ This project demonstrates the effective use of static analysis combined with mac
 - **Continuous Model Enhancement**: Enhancing the model through hyperparameter tuning and incorporating external threat intelligence sources.
 
 ## Credits
-- **JPS Saahil**
-- **Jatin Pathak**
+- **JPS Saahil jpssaahil203@gmail.com**
+- **Jatin Pathak sonic.zeus1@gmail.com**
