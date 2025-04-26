@@ -50,6 +50,9 @@ The dataset is collected from various malware repositories, including VirusTotal
 
 ### 4. Dimensionality Reduction
 - **Principal Component Analysis (PCA)**: Reduces the feature space while retaining maximum variance for model efficiency.
+- <p float="left">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA.png" width="300" />
+  </p>
 
 ### 5. Model Evaluation
 - **Performance Metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC.
