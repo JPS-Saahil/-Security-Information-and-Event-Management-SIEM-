@@ -71,6 +71,10 @@ Principal Component Analysis is used to compress the feature space while retaini
 
 Performance is assessed using Accuracy, Precision, Recall, F1-Score, ROC AUC, and 15-fold cross-validation.
 
+<p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/performance.png" width="700" />
+</p>
+
 ### Visualization
 
 The project includes 2D and 3D scatter plots, explained variance plots, and ROC curve analysis to support interpretation of the results.
@@ -91,7 +95,11 @@ The project includes the following visual outputs to support interpretation of t
 
 ### Feature Space Visualization
 
-2D and 3D scatter plots are used to visualize the PCA-reduced feature space. These plots help illustrate the separation between legitimate and malicious samples after dimensionality reduction.
+2D and 3D scatter plots are used to visualize the PCA-reduced feature space. These plots help illustrate the separation between legitimate and malicious samples after dimensionality reduction
+
+<p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA%20_COMPONENTS.png" width="700" />
+</p>.
 
 ### Explained Variance Ratio
 
@@ -100,14 +108,6 @@ An explained variance ratio plot is used to show how much information is retaine
 ### Model Performance Visualization
 
 ROC curve analysis is used to compare model performance across classification thresholds. This provides a clearer view of the trade-off between true positive rate and false positive rate for each classifier.
-
-<p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA%20_COMPONENTS.png" width="700" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/performance.png" width="700" />
-</p>
 
 <p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/AUC_ROC.png" width="700" />
