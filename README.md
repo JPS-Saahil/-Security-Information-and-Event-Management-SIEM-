@@ -78,7 +78,21 @@ The project includes 2D and 3D scatter plots, explained variance plots, and ROC 
 
 Random Forest delivered the strongest performance in this study. XGBoost followed closely, while KNN produced lower but still reasonable results. PCA improved both interpretability and computational efficiency. Cross-validation indicated that the models generalize well within the scope of the dataset.
 
-## Visual Evidence
+## Visualization
+
+The project includes the following visual outputs to support interpretation of the data and the model results.
+
+### Feature Space Visualization
+
+2D and 3D scatter plots are used to visualize the PCA-reduced feature space. These plots help illustrate the separation between legitimate and malicious samples after dimensionality reduction.
+
+### Explained Variance Ratio
+
+An explained variance ratio plot is used to show how much information is retained by each principal component. This helps assess the effectiveness of PCA in reducing dimensionality while preserving structure in the data.
+
+### Model Performance Visualization
+
+ROC curve analysis is used to compare model performance across classification thresholds. This provides a clearer view of the trade-off between true positive rate and false positive rate for each classifier.
 
 <p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20065833.png" width="700" />
