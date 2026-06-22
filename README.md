@@ -1,127 +1,123 @@
-# 📄 Security Information and Event Management (SIEM)
+# Security Information and Event Management (SIEM)
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-yellow)
+![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+## Overview
+
+This repository presents a static malware analysis system for classifying software applications as legitimate or malicious using machine learning. The approach relies on file attributes that can be extracted without executing the sample, which makes it suitable for early-stage screening and large-scale analysis. The project evaluates Random Forest, K-Nearest Neighbors, and XGBoost to identify the most effective classifier for this task.
 
 ## Abstract
-This project focuses on the development and evaluation of machine learning models aimed at classifying the legitimacy of software applications based on their static attributes. The primary objective is to enhance cybersecurity defenses by leveraging static analysis combined with machine learning techniques to detect potential malware while maintaining a low false positive rate and high detection accuracy. The classification models implemented include Random Forest, K-Nearest Neighbors (KNN), and XGBoost, which have been compared to determine the most effective approach.
+
+The objective of this project is to improve malware detection by combining static feature analysis with supervised machine learning. The pipeline is designed to support strong classification performance while reducing false positives and preserving computational efficiency. Model comparison is performed using standard evaluation metrics and cross-validation to support reliable performance assessment.
 
 ## Key Features
-- **Static Malware Analysis**: Malware detection is performed without executing files.
-- **Machine Learning-based Classification**: Utilizes Random Forest, KNN, and XGBoost models for classification tasks.
-- **Dimensionality Reduction**: Implements Principal Component Analysis (PCA) to reduce the feature space while retaining maximum variance.
-- **Cross-Validation**: 15-Fold Cross-Validation is employed to ensure robust and generalizable model performance.
-- **Visualization**: Interactive visualizations of feature space, variance, and model performance using Plotly and Matplotlib.
-- **Performance Metrics**: Evaluation of models using Accuracy, Precision, Recall, F1-Score, and ROC-AUC.
+
+| Capability | Description |
+|---|---|
+| Static Malware Analysis | Classifies files without executing them |
+| Machine Learning Classification | Uses Random Forest, KNN, and XGBoost |
+| Feature Selection | Applies Extra Trees Classifier to identify important variables |
+| Dimensionality Reduction | Uses PCA to reduce feature space while preserving variance |
+| Cross Validation | Uses 15-fold cross-validation for robust evaluation |
+| Visualization | Produces plots with Matplotlib and Plotly |
+| Performance Metrics | Reports Accuracy, Precision, Recall, F1-Score, and ROC AUC |
 
 ## Technologies Used
-- **Programming Language**: Python 3.10+
-- **Libraries**: 
-  - scikit-learn
-  - XGBoost
-  - Pandas
-  - NumPy
-  - Matplotlib
-  - Plotly
-- **Hardware**:
-  - AMD Ryzen 5700U
-  - Intel i7 11th/12th Gen
-  - NVIDIA RTX 3050/4060 GPUs
+
+The project is implemented in Python 3.10+ and uses the following libraries and tools: scikit-learn, XGBoost, Pandas, NumPy, Matplotlib, and Plotly. The models were developed and tested on common desktop and laptop hardware configurations, including AMD Ryzen 5700U, Intel i7 11th and 12th generation processors, and NVIDIA RTX 3050 or RTX 4060 GPUs.
 
 ## Dataset
-The dataset is collected from various malware repositories, including VirusTotal. The following features are used for analysis:
-- **Name**: Application identifier.
-- **MD5**: Hash for integrity verification.
-- **SizeOfCode**: Size of the executable code.
-- **Legitimate**: Binary classification label indicating whether the software is legitimate or malicious.
-  <p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20065833.png" width="700" />
-</p>
+
+The dataset is assembled from malware repositories, including VirusTotal. The following fields are used for analysis.
+
+| Feature | Description |
+|---|---|
+| Name | Application identifier |
+| MD5 | Hash used for integrity verification |
+| SizeOfCode | Size of the executable code |
+| Legitimate | Binary label indicating whether the software is legitimate or malicious |
+
+The repository also includes visual summaries of the dataset and model outputs.
 
 ## Project Workflow
 
-### 1. Data Preprocessing
-- **Duplicate Removal**: Eliminating redundant data entries.
-- **Missing Value Imputation**: Handling missing values in the dataset.
-- **One-Hot Encoding**: Encoding categorical variables.
-- **Feature Standardization & Normalization**: Ensuring numerical features are on the same scale.
+### Data Preprocessing
 
-### 2. Feature Selection
-- **Extra Trees Classifier**: Used to identify the most significant features contributing to classification.
+The preprocessing stage removes duplicate records, handles missing values, applies one hot encoding to categorical variables, and standardizes numerical features to a common scale.
 
-### 3. Model Training
-- **Random Forest Classifier**
-- **K-Nearest Neighbors (KNN)**
-- **XGBoost Classifier**
+### Feature Selection
 
-### 4. Dimensionality Reduction
-- **Principal Component Analysis (PCA)**: Reduces the feature space while retaining maximum variance for model efficiency.
-  <p align="center">
+An Extra Trees Classifier is used to rank variables according to their contribution to the classification task.
+
+### Model Training
+
+Three classifiers are trained and compared: Random Forest, KNN, and XGBoost.
+
+### Dimensionality Reduction
+
+Principal Component Analysis is used to compress the feature space while retaining the maximum practical amount of variance.
+
+### Model Evaluation
+
+Performance is assessed using Accuracy, Precision, Recall, F1-Score, ROC AUC, and 15-fold cross-validation.
+
+### Visualization
+
+The project includes 2D and 3D scatter plots, explained variance plots, and ROC curve analysis to support interpretation of the results.
+
+## Results
+
+| Model | Accuracy | F1-Score |
+|---|---:|---:|
+| Random Forest | 99.84% | 99.70% |
+| XGBoost | 98.50% | 97.60% |
+| K-Nearest Neighbors | 93.80% | 92.10% |
+
+Random Forest delivered the strongest performance in this study. XGBoost followed closely, while KNN produced lower but still reasonable results. PCA improved both interpretability and computational efficiency. Cross-validation indicated that the models generalize well within the scope of the dataset.
+
+## Visual Evidence
+
+<p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20065833.png" width="700" />
+</p>
+
+<p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA.png" width="700" />
-  </p>
-  <p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA%20_COMPONENTS.png" width="700" />
-  </p>
+</p>
 
-### 5. Model Evaluation
-- **Performance Metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC.
-- **Cross-Validation**: 15-Fold Cross-Validation to ensure model robustness.
+<p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA%20_COMPONENTS.png" width="700" />
+</p>
+
 <p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/performance.png" width="700" />
 </p>
 
-### 6. Visualization
-- **2D/3D Scatter Plots**: Visualizing PCA-reduced feature space.
-- **Explained Variance Ratio Plot**: Visualizing the contribution of each principal component.
-- **ROC Curve Analysis**: Evaluating model performance across various thresholds.
-
-## Results
-- **Random Forest**: Achieved the highest classification accuracy.
-  - **Accuracy**: 99.84%
-  - **F1-Score**: 99.70%
-- **XGBoost**: Close performance to Random Forest.
-  - **Accuracy**: 98.50%
-  - **F1-Score**: 97.60%
-- **K-Nearest Neighbors (KNN)**: Showed reasonable results, but was less effective compared to the other models.
-  - **Accuracy**: 93.80%
-  - **F1-Score**: 92.10%
-- **PCA**: Significantly improved model efficiency and clarity of data patterns.
-- **Cross-Validation**: Demonstrated model robustness and generalization capability.
-- **AUC-ROC**: Curve for model comparision.
-  <p align="center">
+<p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/AUC_ROC.png" width="700" />
-  </p>
+</p>
 
-## System Design Overview
 <p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20071243.png" width="700" />
-  </p>
+</p>
 
-### Input
-- Static attributes of software applications, such as name, size, and MD5 hash.
+## System Design Overview
 
-### Preprocessing
-- Encoding, scaling, and cleaning of features.
-
-### Training
-- Application of machine learning classifiers (Random Forest, KNN, XGBoost).
-
-### Dimensionality Reduction
-- PCA to retain maximum variance with fewer dimensions.
-
-### Prediction
-- Classification of software as legitimate or malicious.
-
-### Visualization
-- Static and interactive graphs to support data analysis and model evaluation.
+The system accepts static application attributes as input. These values are cleaned, encoded, and scaled during preprocessing. Feature selection reduces the dimensionality of the original data, after which the models are trained and evaluated. PCA supports the reduction of high dimensional input into a more compact form. The final output is a classification decision indicating whether the sample is legitimate or malicious. Visualization modules provide plots to support analysis and interpretation.
 
 ## Conclusion
-This project demonstrates the effective use of static analysis combined with machine learning models to distinguish between legitimate and malicious software applications. The use of PCA and robust validation practices significantly enhanced both model accuracy and computational efficiency, offering a promising pathway for real-world malware detection systems.
+
+This project demonstrates that static analysis combined with supervised machine learning can be used to distinguish between legitimate and malicious software with high accuracy. The use of feature selection, PCA, and cross-validation strengthens the reliability of the results and supports the development of practical malware screening systems.
 
 ## Future Scope
-- **GUI Development**: Building a graphical user interface (GUI) for broader usability.
-- **Real-Time Threat Detection**: Integration with network security systems to enable real-time malware detection.
-- **Cross-Platform Compatibility**: Porting the tool to Linux to extend its compatibility.
-- **Sequence-Based Malware Scanning**: Implementing sequence-based methods to detect evolving threat patterns.
-- **Continuous Model Enhancement**: Enhancing the model through hyperparameter tuning and incorporating external threat intelligence sources.
+
+Future work may include a graphical user interface, real time threat detection, Linux support, sequence based malware scanning, and continuous improvement through hyperparameter tuning and external threat intelligence.
 
 ## Credits
-- **JPS Saahil jpssaahil2003@outlook.com**
-- **Jatin Pathak sonic.zeus1@gmail.com**
+
+JPS Saahil, jpssaahil2003@outlook.com
+
+Jatin Pathak, sonic.zeus1@gmail.com
