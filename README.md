@@ -43,6 +43,9 @@ The dataset is assembled from malware repositories, including VirusTotal. The fo
 The repository also includes visual summaries of the dataset and model outputs.
 
 ## Project Workflow
+<p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20071243.png" width="700" />
+</p>
 
 ### Data Preprocessing
 
@@ -51,6 +54,10 @@ The preprocessing stage removes duplicate records, handles missing values, appli
 ### Feature Selection
 
 An Extra Trees Classifier is used to rank variables according to their contribution to the classification task.
+
+<p align="center">
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20065833.png" width="700" />
+</p>
 
 ### Model Training
 
@@ -95,14 +102,6 @@ An explained variance ratio plot is used to show how much information is retaine
 ROC curve analysis is used to compare model performance across classification thresholds. This provides a clearer view of the trade-off between true positive rate and false positive rate for each classifier.
 
 <p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20065833.png" width="700" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA.png" width="700" />
-</p>
-
-<p align="center">
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/PCA%20_COMPONENTS.png" width="700" />
 </p>
 
@@ -114,9 +113,6 @@ ROC curve analysis is used to compare model performance across classification th
   <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/AUC_ROC.png" width="700" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20071243.png" width="700" />
-</p>
 
 ## System Design Overview
 
