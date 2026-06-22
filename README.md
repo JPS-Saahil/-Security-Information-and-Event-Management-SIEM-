@@ -68,7 +68,7 @@ Three classifiers are trained and compared: Random Forest, KNN, and XGBoost.
 Principal Component Analysis is used to compress the feature space while retaining the maximum practical amount of variance.
 
 <p align="center">
-  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets/Screenshot%202025-04-26%20071243.png" width="700" />
+  <img src="https://github.com/JPS-Saahil/-Security-Information-and-Event-Management-SIEM-/blob/master/Assets%2FPCA.png" width="700" />
 </p>
 
 ### Model Evaluation
